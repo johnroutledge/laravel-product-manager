@@ -1,0 +1,258 @@
+/* -------------------------Generic Styling */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: black;
+    height: 90vh;
+    background-color: lightgray;
+    background-size: cover;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.container {
+    color: black;
+    height: 100vh;
+    background-color: lightgray;
+    background-size: cover;
+}
+
+.page-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ------------------------------Buttons */
+.homepage-btn {
+    width: 155px;
+    height: 25px;
+    background: #8a6473;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    font-size: medium;
+}
+
+button.leagues-btn {
+    margin-left: 10px;
+    width: 75px;
+    height: 25px;
+    background: rgb(82, 72, 79);
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+}
+
+button.delete-btn {
+    margin-left: 10px;
+    width: 75px;
+    height: 26px;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    color: #4b4849;
+    font-weight: bold;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    width: 105px;
+    height: 25px;
+    background: #4b4849;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button.leagues-btn:hover{
+    background: gray;
+}
+
+button.delete-btn:hover{
+    background: lightgray;
+}
+
+button.homepage-btn:hover{
+    background: #553d47;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background: gray;
+}
+
+/* ------------------------------Homepage */
+.hero {
+    display: flex;
+}
+
+#hero-text {
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+#hero-image {
+    margin-top: 200px;
+    margin-left: 30%;
+    min-height: 250px;
+    min-width: 250px;   
+}
+
+/* ------------------------------Product List Page */
+table {
+    width: 1000px;
+}
+
+td {
+    text-align: left;
+}
+
+td {
+    padding-top: 10px;
+}
+
+#table-image {
+    column-width: 60px;
+}
+
+.table-action {
+    text-align: center;
+    column-width: 200px;
+}
+
+.products {
+    margin-top: 10px;
+    margin-left: 20%;
+    font-weight: bold;
+}
+
+.product-image {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.vert-align {
+    margin-top: 10px;
+}
+
+input {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    margin-top: 5px;
+    font-weight: bold;
+    width: 250px;
+}
+
+textarea {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    margin-top: 5px;
+    font-weight: bold;
+    width: 250px;
+    height: 200px;
+}
+
+/* ------------------------------Add Product Page */
+#add-product-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.add-div {
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+}
+
+.product-description {
+    padding-left: 15px;
+}
+
+/* ------------------------------Nav Styling */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: gray;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.nav-links li {
+   list-style: none; 
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* ------------------------------Footer Styling */
+footer {
+    background-color: gray;
+    color: white; 
+    position: fixed;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ------------------------------Delete Modal */
+.modal-title {
+    font-weight: bold !important;
+}
+
+.modal-align {
+    display: flex;
+}
+
+/* ------------------------------Media Queries */
+@media screen and (max-width: 1200px){
+    .nav-links {
+        width: 30%;
+    }
+}
